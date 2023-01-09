@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>Life in THE</title>
+
+    <!--font-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <style>
+        @font-face {
+            font-family: "BRBA_B";
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }/*배스킨라빈스폰트*/
+    </style>
+
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <div class="header_inner">
+            <h1><a href="../index.html"><img src="./images/Logo_134&96.png" alt="h1logo"></a></h1>
+
+            <form action="#none" method="post">
+                <input type="text" placeholder="검색어를 입력하세요." class="search_box" onfocus="this.placeholder = ''" onblur="this.placeholder = '검색어를 입력하세요.'">
+            </form>
+
+            <ul class="icon_right clearfix">
+                <li><a href="#none"><img src="./images/person.png" alt="mypage" class="page_cart"></a></li>
+                <li><a href="#none"><img src="./images/shopping_cart.png" alt="장바구니" class="page_cart"></a></li>
+                <li><a href="#none"><img src="./images/login.png" alt="login" class="log_join"></a></li>
+                <li><a href="#none"><img src="./images/joinus.png" alt="joinus" class="log_join"></a></li>
+            </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+
+    <div id="menu">
+      <div class="menu_inner">
+        <ul id="gnb">
+          <li>
+            <input type="checkbox" id="menuicon">
+              <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            <div class="sidebar">
+              <div class="goods clearfix">
+              <ul class="text">
+                <li><a href="#none">생활용품</a></li>
+                <li><a href="#none">사무용품</a></li>
+                <li><a href="#none">침구용품</a></li>
+                <li><a href="#none">주방용품</a></li>
+                <li><a href="#none">공업용품</a></li>
+                <li><a href="#none">인테리어</a></li>
+              </ul>
+              <ul class="border"></ul>
+              <ul class="text">
+                <li><a href="../best/index.html">베스트</a></li>
+                <li><a href="#none">신상품</a></li>
+                <li><a href="#none">추천</a></li>
+              </ul>
+              <ul class="border"></ul>
+              <ul class="text">
+                <li><a href="../chance/index.html">특가찬스</a></li>
+                <li><a href="../event/index.html">진행중인 이벤트</a></li>
+                <li><a href="#none">종료된 이벤트</a></li>
+              </ul>
+              <ul class="border"></ul>
+              <ul class="text">
+                <li><a href="../community/index.html">공지사항</a></li>
+                <li><a href="#none">FAQ</a></li>
+                <li><a href="#none">QnA</a></li>
+              </ul>
+              <ul class="border"></ul>
+              <ul class="text">
+                <li><a href="./index.html">Life in THE</a></li>
+              </ul>
+              </div><!--goods-->
+            </div><!--sidebar-->
+          </li>
+            <li class="margin"><a href="../best/index.html">베스트</a><span class="under"></span></li>
+            <li class="margin"><a href="../chance/index.html">특가찬스</a><span class="under"></span></li>
+            <li class="margin"><a href="../event/index.html">이벤트</a><span class="under"></span></li>
+            <li class="margin"><a href="../community/index.html">커뮤니티</a><span class="under"></span></li>
+            <li class="margin"><a href="./index.html">브랜드</a><span class="under"></span></li>
+        </ul>    
+      </div><!--menu_inner-->    
+    </div><!--menu-->
+
+    <div id="slogan">
+      <div class="slogan_inner">
+        <h1 class="logo"><img src="./images/intro_logo.png" alt="라이브인더로고" data-aos="fade"  data-aos-duration="1000" data-aos-delay="300"></h1>
+        <div class="text" data-aos="fade-left">
+          <h1><span class="blue">Life</span><span class="orange">in</span><span class="gray">THE</span></h1>
+          <p>라이브인더 심볼은</p>
+          <h2>'생활에 더하다'</h2>
+          <p class="mean">를 의미를 담고 있습니다.</p>
+        </div>
+      </div><!--slogan_inner-->
+    </div><!--slogan-->
+
+    <div id="hope">
+      <div class="hope_inner">
+        <div class="box">
+          <div class="circle" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="300">
+            <img src="./images/want_icon.png" alt="want_슬로건">
+            <h2>Want</h2>
+            <p>고객 한 분 한 분 원하는 스타일을<br>
+              가져갈 수 있도록 상품을 찾아<br>
+              제공하고 다양한 서비스를<br>
+              제공합니다.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="circle" data-aos="fade-down"  data-aos-duration="1000" data-aos-delay="300">
+            <img src="./images/simple_icon.png" alt="simple_슬로건"> 
+            <h2>Simple</h2>
+            <p>쉽고 간단하게 사용할 수 있는 상품들을<br>
+              제공하고 합리적인 선택할 수 있도록<br>
+              소개합니다.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="circle" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="300">
+            <img src="./images/together_icon.png" alt="together_슬로건">
+            <h2>Together</h2>
+            <p>이용해주신 고객에 대한 감사함과<br>
+              지역사회에 좋은 마음을 조금이나마<br>
+              전하고자 여러 활동으로 기여합니다.</p>
+          </div>
+        </div>
+      </div><!--hope_inner-->
+      <p data-aos="fade-right">여러분들 생활하는 모든 곳에서 보탬이 되어 즐거운 라이프를 만들어 가고자 합니다.</p>
+      <p data-aos="fade-left">Life in THE는 ‘가장 합리적인 선택’으로 여러분의 생활에 기여하겠습니다.</p>
+    </div><!--hope-->
+
+    <div id="logo">
+      <div class="logo_inner">
+        <div class="left">
+          <img src="./images/home.png" alt="집모양이미지" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+        </div>
+        <p>+</p>
+        <div class="middle">
+          <img src="./images/door.png" alt="창문모양이미지" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
+        </div>
+        <p>+</p>
+        <div class="right">
+          <img src="./images/name.png" alt="브랜드네임이미지" data-aos="fade" data-aos-duration="500" data-aos-delay="300">
+        </div>
+      </div>
+      <div class="main">
+        <img src="./images/intro_logo.png" alt="라이프인더로고" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+        <p data-aos="fade-right" data-aos-duration="700" data-aos-delay="300">모두가 생활하는 일반적인 집형태로 모양을 잡아보았고<br>
+          밖에서 보이는 창문 모양과 브랜드 이름을 결합하여 만들어 보았습니다.</p>
+      </div>
+
+
+    </div><!--logo-->
+
+    <div id="card">
+      <img src="./images/business_card_l.png" alt="명함이미지" data-aos="flip-left"
+      class="left">
+      <img src="./images/business_card_r.png" alt="명함이미지" data-aos="flip-right"
+      class="right">
+    </div><!--card-->
+
+    <div id="storage">
+        <div class="text_1">
+          <h2>사하 물류센터</h2>
+          <p data-aos="fade">Life in THE는 2022년 12월 기준 동래 물류센터에서 신축 사하 물류센터로 확장이전하였습니다.<br>
+            이를 통해 더 많은 재고상품을 확보하고 당일 출하율을 최대한 증대하여 빠른 배송과 상품 제공으로<br>
+            고객들에게 높은 만족과 좋은 서비스를 제공하고 있습니다.</p>
+          <div class="img_1">
+            <img src="./images/storage_1.png" alt="물류창고1" class="storage_1" data-aos="fade">
+            <img src="./images/storage_2.png" alt="물류창고1" class="storage_2" data-aos="fade" data-aos-delay="100">
+          </div>
+        </div>
+
+        <div class="text_2">
+          <h2><span>10,000개 이상</span>의 재고상품 보유</h2>
+          <p data-aos="fade">최대한 정확한 배송을 위하여 약 10,000개 이상의 재고 상품을 보유하고 있습니다.<br>
+            2022년 12월, 기존 물량의 2배를 출하할 수 있는 신규 물류센터로 이전하여<br>
+            당일 출하율을 늘리고 고객에게 편리성 향상 위해 노력하고 있습니다.</p>
+          <div class="img_2">
+            <img src="./images/storage_3.png" alt="물류창고3" class="storage_3" data-aos="fade">
+            <img src="./images/storage_4_.png" alt="물류창고4" class="storage_4" data-aos="fade" data-aos-delay="100">
+          </div>
+        </div>
+    </div><!--storage-->
+
+    <div id="map" data-aos="fade">
+      <div class="load">
+        <h2>BUS</h2>
+        <p>96-1, 마을버스 14</p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.219291230172!2d128.99036063149524!3d35.07674679466862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e81f05b2dad1%3A0xbc5d0424cc702d49!2z6rWs7Y-J7LKg66y87KCQ!5e0!3m2!1sko!2skr!4v1670814754577!5m2!1sko!2skr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade" data-aos-duration="2000" data-aos-delay="300"></iframe>
+    </div><!--map-->
+
+    <div id="footer">
+        <div class="footer_inner clearfix">
+            <ul class="guide clearfix">
+                <li><a href="#none">공지사항</a></li>
+                <li><a href="#none">교환/반품 안내</a></li>
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none">FAQ</a></li>
+            </ul>
+            
+            <ul class="info">
+                <li>사업자등록번호 : 123-45-12345 | 통신판매업신고번호 : 부산 - 12345</li>
+                <li class="padding">대표 : 김 도안 | 주소: 부산광역시 동래구 사직로45</li>
+                <li>copyright. 2022. lifeinthe.com. All rights reserved.</li>
+            </ul>
+
+            <ul class="icon clearfix">
+                <li><a href="#none"><img src="./images/instagram.png" alt="인스타그램"></a></li>
+                <li><a href="#none"><img src="./images/youtube.png" alt="유투브"></a></li>
+                <li><a href="#none"><img src="./images/smart_store.png" alt="스마트스토어"></a></li>
+            </ul>
+
+            <div class="center">
+                <p class="size">고객센터</p>
+                <p><span>1234-5678</span></p>
+                <p class="padding">토요일, 공휴일 휴무</p>
+                <p>(09:00~18:00)</p>
+            </div>
+        </div><!--footer_inner-->
+    </div><!--footer-->
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper main_banner-->
+    <script>
+      var swiper = new Swiper(".main_banner", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
+
+    <!-- Initialize Swiper review-->
+    <script>
+      var swiper = new Swiper(".review", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!--제이쿼리 라이브러리 파일-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+    <script>
+      AOS.init();
+    </script>
+    
+</body>
+</html>

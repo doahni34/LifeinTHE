@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>Life in THE</title>
+
+    <!--font-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"/>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+      @font-face {
+          font-family: "BRBA_B";
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }/*배스킨라빈스폰트*/
+  </style>
+
+</head>
+<body>
+  <div id="header" class="clearfix">
+    <div class="header_inner">
+      <h1><a href="./index.html"><img src="./images/Logo_134&96.png" alt="h1logo"></a></h1>
+        <form action="#none" method="post">
+          <input type="text" placeholder="검색어를 입력하세요." class="search_box" onfocus="this.placeholder = ''" onblur="this.placeholder = '검색어를 입력하세요.'">
+        </form>
+      <ul class="icon_right clearfix">
+        <li><a href="#none"><img src="./images/person.png" alt="mypage" class="page_cart"></a></li>
+        <li><a href="#none"><img src="./images/shopping_cart.png" alt="장바구니" class="page_cart"></a></li>
+        <li><a href="#none"><img src="./images/login.png" alt="login" class="log_join"></a></li>
+        <li><a href="#none"><img src="./images/joinus.png" alt="joinus" class="log_join"></a></li>
+      </ul>
+    </div><!--header_inner-->
+  </div><!--header-->
+
+  <div id="menu">
+    <div class="menu_inner">
+      <ul id="gnb">
+        <li>
+          <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          <div class="sidebar">
+            <div class="goods clearfix">
+            <ul class="text">
+              <li><a href="#none">생활용품</a></li>
+              <li><a href="#none">사무용품</a></li>
+              <li><a href="#none">침구용품</a></li>
+              <li><a href="#none">주방용품</a></li>
+              <li><a href="#none">공업용품</a></li>
+              <li><a href="#none">인테리어</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="./best/index.html">베스트</a></li>
+              <li><a href="#none">신상품</a></li>
+              <li><a href="#none">추천</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="./chance/index.html">특가찬스</a></li>
+              <li><a href="./event/index.html">진행중인 이벤트</a></li>
+              <li><a href="#none">종료된 이벤트</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="./community/index.html">공지사항</a></li>
+              <li><a href="#none">FAQ</a></li>
+              <li><a href="#none">QnA</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="./intro/index.html">Life in THE</a></li>
+            </ul>
+            </div><!--goods-->
+          </div><!--sidebar-->
+        </li>
+          <li class="margin"><a href="./best/index.html">베스트</a><span class="under"></span></li>
+          <li class="margin"><a href="./chance/index.html">특가찬스</a><span class="under"></span></li>
+          <li class="margin"><a href="./event/index.html">이벤트</a><span class="under"></span></li>
+          <li class="margin"><a href="./community/index.html">커뮤니티</a><span class="under"></span></li>
+          <li class="margin"><a href="./intro/index.html">브랜드</a><span class="under"></span></li>
+      </ul>    
+    </div><!--menu_inner-->    
+  </div><!--menu-->
+
+  <div id="banner">
+    <!-- Swiper -->
+    <div class="swiper main_banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_1.png" alt="main_banner_1"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_2.jpg" alt="main_banner_2"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_3.png" alt="main_banner_3"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_4.png" alt="main_banner_4"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_5.png" alt="main_banner_5"></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!--<div class="swiper-pagination"></div>-->
+    </div>
+  </div><!--banner-->
+
+    <div id="best">
+        <div class="best_inner">
+            <h2><img src="./images/best_logo.png" alt="베스트로고"></h2>
+
+            <ul class="tabs clearfix">
+                <li><a href="#tab1">생활용품</a></li>
+                <li><a href="#tab2">침구용품</a></li>
+                <li><a href="#tab3">사무용품</a></li>
+                <li><a href="#tab4">주방용품</a></li>
+                <li><a href="#tab5">공업용품</a></li>
+                <li><a href="#tab6">인테리어</a></li>
+            </ul>
+
+            <!--탭 콘텐츠 영역 -->
+            <div class="tab_container">
+
+            <div id="tab1" class="tab_content">
+                <!--Content-->
+                <a href="#none">
+                  <img src="./images/best_1.png" alt="best1">
+                <h3>대나무 롤 화장지</h3>
+                <p>10,900<small>원</small></p>
+              </a>
+                <a href="#none">
+                  <img src="./images/best_2.png" alt="best2">
+                  <h3>포근 푹신푹신 쿠션</h3>
+                  <p>14,300<small>원</small></p>
+                </a>
+                <a href="#none">
+                  <img src="./images/best_3.png" alt="best3">
+                  <h3>보들보들 샤워타월</h3>
+                  <p>4,900<small>원</small></p>
+                </a>
+            </div><!--tab1-->
+  
+            <div id="tab2" class="tab_content">
+                <!--Content-->
+                <a href="#none"><img src="./images/best_4.png" alt="best4">
+                  <h3>미래가구 소파</h3>
+                  <p>300,900<small>원</small></p>
+                </a>
+                <a href="#none" class="side"><img src="./images/best_5.png" alt="best5">
+                  <h3>따스한 이즈 카이 침대</h3>
+                  <p>254,000<small>원</small></p>
+                </a>
+                <a href="#none"><img src="./images/best_6.png" alt="best6">
+                  <h3>수피마 호텔식 이불세트</h3>
+                  <p>113,000<small>원</small></p>
+                </a>
+                </div><!--tab2-->
+  
+            <div id="tab3" class="tab_content">
+                <!--Content-->
+                <a href="#none"><img src="./images/best_7.png" alt="best7">
+                  <h3>디스킨 블랙 우드 만년필</h3>
+                  <p>76,000<small>원</small></p>
+                </a>
+                <a href="#none" class="side"><img src="./images/best_8.png" alt="best8">
+                  <h3>포스트잇 대용량팩</h3>
+                  <p>12,500<small>원</small></p>
+                </a>
+                <a href="#none"><img src="./images/best_9.png" alt="best9">
+                  <h3>다용도 스카치 테이프</h3>
+                  <p>9,200<small>원</small></p>
+                </a>
+            </div><!--tab3-->
+  
+            <div id="tab4" class="tab_content">
+                <!--Content-->
+                <a href="#none"><img src="./images/best_10.png" alt="best10">
+                  <h3>사브로 스푼 포크 나이프</h3>
+                  <p>23,100<small>원</small></p>
+                </a>
+                <a href="#none" class="side"><img src="./images/best_11.png" alt="best11">
+                  <h3>쿡아트 인덕션 프라이팬</h3>
+                  <p>16,900<small>원</small></p>
+                </a>
+                <a href="#none"><img src="./images/best_12.png" alt="best12">
+                  <h3>헤라 주방용 칼</h3>
+                  <p>27,600<small>원</small></p>
+                </a>
+                </div><!--tab4-->
+            </div>
+
+            <div id="tab5" class="tab_content">
+                <!--Content-->
+                <a href="#none"><img src="./images/best_13.png" alt="best13">
+                  <h3>공업 안전모 장갑 세트</h3>
+                  <p>14,900<small>원</small></p>
+                </a>
+                <a href="#none" class="side"><img src="./images/best_14.png" alt="best14">
+                  <h3>양구 스패너 단품</h3>
+                  <p>2,900<small>원</small></p>
+                </a>
+                <a href="#none"><img src="./images/best_15.png" alt="best15">
+                  <h3>가정용 플라이어 니퍼 세트</h3>
+                  <p>7,400<small>원</small></p>
+                </a>
+            </div><!--tab5-->
+  
+            <div id="tab6" class="tab_content">
+                <!--Content-->
+                <a href="#none"><img src="./images/best_16.png" alt="best16">
+                  <h3>거실 식탁 조명</h3>
+                  <p>39,900<small>원</small></p>
+                </a>
+                <a href="#none" class="side"><img src="./images/best_17.png" alt="best17">
+                  <h3>이전트 디퓨저</h3>
+                  <p>5,400<small>원</small></p>
+                </a>
+                <a href="#none"><img src="./images/best_18.png" alt="best18">
+                  <h3>천연 아로마 캔들</h3>
+                  <p>13,200<small>원</small></p>
+                </a>
+            </div><!--tab6-->
+          </div><!--tab_container-->
+        </div><!--best_inner-->
+    </div><!--best-->
+
+    <div id="notice">
+      <h2><img src="./images/notice_logo.png" alt="notice_logo"></h2>
+      <div class="notice_inner">
+              <div id="board-list">
+                  <div class="container">
+                      <table class="board-table">
+                          <thead>
+                          <tr>
+                              <th scope="col" class="th-num">번호</th>
+                              <th scope="col" class="th-title">제목</th>
+                              <th scope="col" class="th-date">등록일</th>
+                          </tr>
+                          </thead>
+                          
+                          <tr>
+                              <td>3</td>
+                              <th>
+                                <a href="#!">크리스마스 전 배송 안내입니다.</a>
+                              </th>
+                              <td>2022.11.16</td>
+                          </tr>
+          
+                          <tr>
+                              <td>2</td>
+                              <th><a href="#!">이벤트 당첨자 안내입니다.</a></th>
+                              <td>2022.11.15</td>
+                          </tr>
+          
+                          <tr>
+                              <td>1</td>
+                              <th><a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a></th>
+                              <td>2022.11.14</td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+      </div><!--notice_inner-->
+  </div><!--notice-->
+
+    <div id="new">
+        <div class="new_inner clearfix">
+            <h2><img src="./images/new_logo.png" alt="신상품로고"></h2>
+
+            <a href="#none"><img src="./images/new_300.png" alt="new_300"></a>
+
+            <!-- Swiper -->
+    <div class="swiper new">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#none"><img src="./images/new_1.png" alt="new_1"></a>
+          <h3>코코넛 클렌징오일</h3>
+          <p>13,900<small>원</small></p>
+        </div><!--swiper-slide-->
+        <div class="swiper-slide">
+          <a href="#none"><img src="./images/new_2.png" alt="new_2"></a>
+          <h3>향향 헤어샴푸</h3>
+          <p>11,900<small>원</small></p>
+        </div><!--swiper-slide-->
+        <div class="swiper-slide">
+          <a href="#none"><img src="./images/new_3.png" alt="new_3"></a>
+          <h3>안전 멀티탭 1.5m</h3>
+          <p>13,900<small>원</small></p>
+        </div><!--swiper-slide-->
+        <div class="swiper-slide">
+          <a href="#none"><img src="./images/new_4.png" alt="new_4"></a>
+          <h3>소프트 수건 수피마 타올</h3>
+          <p>6,900<small>원</small></p>
+        </div><!--swiper-slide-->
+        <div class="swiper-slide">
+          <a href="#none"><img src="./images/new_5.png" alt="new_5"></a>
+          <h3>무소음 탁상 알람시계</h3>
+          <p>15,900<small>원</small></p>
+        </div><!--swiper-slide-->
+        <div class="swiper-slide">
+          <a href="#none"><img src="./images/new_6.png" alt="new_6"></a>
+          <h3>보글보글 뷰티 천연비누</h3>
+          <p>13,900<small>원</small></p>
+        </div><!--swiper-slide-->
+      </div><!--swiper-wrapper-->
+      
+      <!--<div class="swiper-pagination"></div>-->
+    </div><!--swiper-->
+    <div class="swiper-button-next new_next"></div>
+    <div class="swiper-button-prev new_prev"></div>
+        </div><!--new_inner-->
+    </div><!--new-->
+
+    <div id="chance">
+        <div class="chance_inner">
+            <h2><img src="./images/chance_logo.png" alt="특가로고"></h2>
+            <ul class="hover">
+              <li>
+                <a href="#none"><img src="./images/chance_1.png" alt="chance1">
+                  <div class="black_box">
+                    <h3>향긋 솔솔 샴푸</h3>
+                    <p>4,130<small>원</small><del>5,900<small>원</small></del></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/chance_2.png" alt="chance2">
+                  <div class="black_box">
+                    <h3>진공 압축 포장기</h3>
+                    <p>34,930<small>원</small><del>49,900<small>원</small></del></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/chance_3.png" alt="chance3">
+                  <div class="black_box">
+                    <h3>세면다월 75x35cm_그레이</h3>
+                    <p>6,930<small>원</small><del>9,900<small>원</small></del></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/chance_4.png" alt="chance4">
+                  <div class="black_box">
+                    <h3>양털터치 양면 토퍼_브라운</h3>
+                    <p>19,950<small>원</small><del>25,900<small>원</small></del></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/chance_5.png" alt="chance5">
+                  <div class="black_box">
+                    <h3>토닥토닥 시원한 마사지기</h3>
+                    <p>41,930<small>원</small><del>59,900<small>원</small></del></p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+        </div><!--chance_inner-->
+    </div><!--chance-->
+
+    <div id="review">
+        <div class="review_inner">
+          <h2><img src="./images/review_logo.png" alt="리뷰로고"></h2>
+
+          <div class="swiper review">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/review_1.png" alt="review1">
+                <p class="star"><img src="./images/star.png" alt="star" alt="review1">
+                <img src="./images/star.png" alt="star">
+                <img src="./images/star.png" alt="star">
+                <img src="./images/star.png" alt="star">
+                <img src="./images/star.png" alt="star"></p>
+                <p class="text">부드럽게 잘 움직이네요<br>
+                케이스도 있어서<br>
+                보관하기 좋네요</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/review_2.png" alt="review2">
+                <p class="star"><img src="./images/star.png" alt="star" alt="review2">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">붓이 흐물흐물 하지않고<br>
+                  강도가 적당하여<br>
+                  칠하기 좋습니다<br>
+                </p>
+                </div>
+              <div class="swiper-slide"><img src="./images/review_3.png" alt="review3">
+                <p class="star"><img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">세트로 구매하여<br>
+                  찾는 시간 절약할수있어<br>
+                  좋습니다<br>
+                </p>
+                </div>
+              <div class="swiper-slide"><img src="./images/review_4.png" alt="review4">
+                <p class="star"><img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">텃밭 꾸미는데<br>
+                  장갑이 질겨서 손을 보호<br>
+                  해주어 편하게 가꿉니다<br>
+                </p>
+                </div>
+              <div class="swiper-slide"><img src="./images/review_5.png" alt="review5">
+                <p class="star"><img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">물감 도료가<br>
+                  냄새가 적어 머리통증이<br>
+                  덜합니다<br>
+                </p>
+                </div>
+              <div class="swiper-slide"><img src="./images/review_1.png" alt="review6">
+                <p class="star"><img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">부드럽게 잘 움직이네요<br>
+                케이스도 있어서<br>
+                보관하기 좋네요
+                </p>
+                </div>
+              <div class="swiper-slide"><img src="./images/review_2.png" alt="review7">
+                <p class="star"><img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">붓이 흐물흐물 하지않고<br>
+                  강도가 적당하여<br>
+                  칠하기 좋습니다<br>
+                </p>
+                </div>
+              <div class="swiper-slide"><img src="./images/review_3.png" alt="review8">
+                <p class="star"><img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">세트로 구매하여<br>
+                  찾는 시간 절약할수있어<br>
+                  좋습니다<br>
+                </p>
+                </div>
+              <div class="swiper-slide"><img src="./images/review_4.png" alt="review9">
+                <p class="star"><img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star">
+                  <img src="./images/star.png" alt="star"></p>
+                <p class="text">물감 도료가<br>
+                  냄새가 적어 머리통증이<br>
+                  덜합니다<br>
+                </p>
+                </div>
+            </div>
+            <!--<div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>-->
+          </div>
+        </div><!--review_inner-->
+      </div><!--review-->
+
+    <div id="footer">
+        <div class="footer_inner clearfix">
+            <ul class="guide clearfix">
+                <li><a href="#none">공지사항</a></li>
+                <li><a href="#none">교환/반품 안내</a></li>
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none">FAQ</a></li>
+            </ul>
+            
+            <ul class="info">
+                <li>사업자등록번호 : 123-45-12345 | 통신판매업신고번호 : 부산 - 12345</li>
+                <li class="padding">대표 : 김 도안 | 주소: 부산광역시 동래구 사직로45</li>
+                <li>copyright. 2022. lifeinthe.com. All rights reserved.</li>
+            </ul>
+
+            <ul class="icon clearfix">
+                <li><a href="#none"><img src="./images/instagram.png" alt="인스타그램"></a></li>
+                <li><a href="#none"><img src="./images/youtube.png" alt="유투브"></a></li>
+                <li><a href="#none"><img src="./images/smart_store.png" alt="스마트스토어"></a></li>
+            </ul>
+
+            <div class="center">
+                <p class="size">고객센터</p>
+                <p><span>1234-5678</span></p>
+                <p class="padding">토요일, 공휴일 휴무</p>
+                <p>(09:00~18:00)</p>
+            </div>
+        </div><!--footer_inner-->
+    </div><!--footer-->
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper main_banner-->
+    <script>
+      var swiper = new Swiper(".main_banner", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
+
+    <!-- Initialize Swiper new -->
+    <script>
+      var swiper = new Swiper(".new", {
+        slidesPerView: 3,
+        spaceBetween: 5,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".new_next",
+          prevEl: ".new_prev",
+        },
+      });
+    </script>
+
+    <!-- Initialize Swiper review-->
+    <script>
+      var swiper = new Swiper(".review", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!--제이쿼리 라이브러리 파일-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    <!--탭 제이쿼리-->
+    <script type="text/javascript">
+    $(document).ready(function () {
+  
+      //처음들어갔을때 모습 만들기...
+      $(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+      $("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+      $(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+  
+      //On Click Event
+      $("ul.tabs li").click(function () {
+  
+        $("ul.tabs li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+        $(".tab_content").hide(); //모든 contents들 숨김
+  
+        var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+        /*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+        .find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+        $(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+        return false;
+      });
+  
+    });
+  </script>
+</body>
+</html>
