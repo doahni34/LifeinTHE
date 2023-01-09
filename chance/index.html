@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>Life in THE</title>
+    
+    <!--font-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"/>
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!--font-->
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      @font-face {
+          font-family: "BRBA_B";
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }/*배스킨라빈스폰트*/
+  </style>
+
+</head>
+<body>
+  <div id="header" class="clearfix">
+    <div class="header_inner">
+      <h1><a href="../index.html"><img src="./images/Logo_134&96.png" alt="h1logo"></a></h1>
+        <form action="#none" method="post">
+          <input type="text" placeholder="검색어를 입력하세요." class="search_box" onfocus="this.placeholder = ''" onblur="this.placeholder = '검색어를 입력하세요.'">
+        </form>
+      <ul class="icon_right clearfix">
+        <li><a href="#none"><img src="./images/person.png" alt="mypage" class="page_cart"></a></li>
+        <li><a href="#none"><img src="./images/shopping_cart.png" alt="장바구니" class="page_cart"></a></li>
+        <li><a href="#none"><img src="./images/login.png" alt="login" class="log_join"></a></li>
+        <li><a href="#none"><img src="./images/joinus.png" alt="joinus" class="log_join"></a></li>
+      </ul>
+    </div><!--header_inner-->
+  </div><!--header-->
+
+  <div id="menu">
+    <div class="menu_inner">
+      <ul id="gnb">
+        <li>
+          <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          <div class="sidebar">
+            <div class="goods clearfix">
+            <ul class="text">
+              <li><a href="#none">생활용품</a></li>
+              <li><a href="#none">사무용품</a></li>
+              <li><a href="#none">침구용품</a></li>
+              <li><a href="#none">주방용품</a></li>
+              <li><a href="#none">공업용품</a></li>
+              <li><a href="#none">인테리어</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="#none">베스트</a></li>
+              <li><a href="#none">신상품</a></li>
+              <li><a href="#none">추천</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="../chance/index.html">특가찬스</a></li>
+              <li><a href="../event/index.html">진행중인 이벤트</a></li>
+              <li><a href="#none">종료된 이벤트</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="../community/index.html">공지사항</a></li>
+              <li><a href="#none">FAQ</a></li>
+              <li><a href="#none">QnA</a></li>
+            </ul>
+            <ul class="border"></ul>
+            <ul class="text">
+              <li><a href="../intro/index.html">Life in THE</a></li>
+            </ul>
+            </div><!--goods-->
+          </div><!--sidebar-->
+        </li>
+          <li class="margin"><a href="../best/index.html">베스트</a><span class="under"></span></li>
+          <li class="margin"><a href="../chance/index.html">특가찬스</a><span class="under"></span></li>
+          <li class="margin"><a href="../event/index.html">이벤트</a><span class="under"></span></li>
+          <li class="margin"><a href="../community/index.html">커뮤니티</a><span class="under"></span></li>
+          <li class="margin"><a href="../intro/index.html">브랜드</a><span class="under"></span></li>
+      </ul>    
+    </div><!--menu_inner-->    
+  </div><!--menu-->
+
+
+  <div id="banner">
+    <!-- Swiper -->
+    <div class="swiper main_banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_1.png" alt="main_banner_1"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_2.jpg" alt="main_banner_2"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_3.png" alt="main_banner_3"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_4.png" alt="main_banner_4"></a></div>
+          <div class="swiper-slide"><a href="#none"><img src="./images/main_banner_5.png" alt="main_banner_5"></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!--<div class="swiper-pagination"></div>-->
+    </div>
+  </div><!--banner-->
+
+    <div id="category">
+      <ul>
+        <li><a href="#none"><img src="./images/life_logo.png" alt="생활용품"></a></li>
+        <li><a href="#none"><img src="./images/fabric_logo.png" alt="침구용품"></a></li>
+        <li><a href="#none"><img src="./images/office_logo.png" alt="사무용품"></a></li>
+        <li><a href="#none"><img src="./images/kitchen_logo.png" alt="주방용품"></a></li>
+        <li><a href="#none"><img src="./images/tool_logo.png" alt="공업용품"></a></li>
+        <li><a href="#none"><img src="./images/interior_logo.png" alt="인테리어"></a></li>
+      </ul>
+      <div class="category_inner">
+      </div><!--category_inner-->
+    </div><!--category-->
+
+    <div id="chance">
+      <div class="chance_inner">
+        <h2><img src="./images/chance_logo.png" alt="특가로고"></h2>
+
+         <ul class="gnb">
+          <li>
+            <div class="back"><h3>특가</h3></div>
+            <a href="#none"><img src="./images/chance_01.png" alt="특가1"></a>
+            <h3>포르나세티 쿠션</h3>
+            <p>35,400<small>원</small></p>
+          </li>
+          <li>
+            <div class="back"><h3>특가</h3></div>
+            <a href="#none"><img src="./images/chance_02.png" alt="특가2"></a>
+            <h3>손님용 거실용 슬리퍼</h3>
+            <p>4,150<small>원</small></p>
+          </li>
+          <li>
+            <div class="back"><h3>특가</h3></div>
+            <a href="#none"><img src="./images/chance_03.png" alt="특가3"></a>
+            <h3>홍안 만년필 1130</h3>
+            <p>10,900<small>원</small></p>
+          </li>
+         </ul>
+      </div><!--chance_inner-->
+    </div><!--chance-->
+
+    <div id="product">
+      <div class="product_inner">
+        <ul>
+          <li>
+            <a href="#none"><img src="./images/chance_1.png" alt="chance_1"></a>
+            <h2>다우솔<span>10%</span></h2>
+            <h3>푸드 가정용 진공포장기</h3>
+            <p><b>109,350<small>원</small></b><del>121,500<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_2.png" alt="chance_2"></a>
+            <h2>나플<span>10%</span></h2>
+            <h3>수월 가정용 타올</h3>
+            <p><b>2,610<small>원</small></b><del>2,900<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_3.png" alt="chance_3"></a>
+            <h2>쫀득쫀득<span>10%</span></h2>
+            <h3>랑랑 차렵이불</h3>
+            <p><b>28,710<small>원</small></b><del>31,900<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_4.png" alt="chance_4"></a>
+            <h2>아랑고<span>10%</span></h2>
+            <h3>진동 마사지기 안마기</h3>
+            <p><b>88,470<small>원</small></b><del>98,300<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_5.png" alt="chance_5"></a>
+            <h2>에솔<span>10%</span></h2>
+            <h3>신발 운동화 기능성깔창</h3>
+            <p><b>21,300<small>원</small></b><del>27,800<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart" class="cart"></a></p>
+          </li>
+        </ul>
+        <ul class="mid">
+          <li>
+            <a href="#none"><img src="./images/chance_6.png" alt="chance_6"></a>
+            <h2>크토<span>10%</span></h2>
+            <h3>동용접봉 용접봉 1kg</h3>
+            <p><b>12,600<small>원</small></b><del>14,000<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_7.png" alt="chance_7"></a>
+            <h2>트러미<span>10%</span></h2>
+            <h3>원형 양구 콤비네이션 스패너</h3>
+            <p><b>14,800<small>원</small></b><del>19,800<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_8.png" alt="chance_8"></a>
+            <h2>퍼픽<span>10%</span></h2>
+            <h3>도트 미끄럼 방지 장갑</h3>
+            <p><b>360<small>원</small></b><del>400<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_9.png" alt="chance_9"></a>
+            <h2>사브로<span>10%</span></h2>
+            <h3>포크 스푼 나이프</h3>
+            <p><b>19,170<small>원</small></b><del>21,300<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_10.png" alt="chance_10"></a>
+            <h2>마투스<span>10%</span></h2>
+            <h3>플라이어 펜치</h3>
+            <p><b>4,950<small>원</small></b><del>5,500<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#none"><img src="./images/chance_11.png" alt="chance_11"></a>
+            <h2>카르<span>10%</span></h2>
+            <h3>야외용 선풍기</h3>
+            <p><b>144,270<small>원</small></b><del>160,300<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_12.png" alt="chance_12"></a>
+            <h2>마리아<span>10%</span></h2>
+            <h3>각 티슈 200매</h3>
+            <p><b>3,150<small>원</small></b><del>3,500<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_13.png" alt="chance_13"></a>
+            <h2>초대향<span>10%</span></h2>
+            <h3>우드 나무 캔들</h3>
+            <p><b>17,910<small>원</small></b><del>19,900<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_14.png" alt="chance_14"></a>
+            <h2>솔리드<span>10%</span></h2>
+            <h3>러프 소파 쿠션</h3>
+            <p><b>4,410<small>원</small></b><del>4,900<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/chance_15.png" alt="chance_15"></a>
+            <h2>타린<span>10%</span></h2>
+            <h3>타일 무늬 소파 쿠션</h3>
+            <p><b>9,450<small>원</small></b><del>10,500<small>원</small></del><a href="#none"><img src="./images/shopping_cart_30.png" alt="cart"></a></p>
+          </li>
+        </ul>
+
+        <div class="number"><a href="#none">[1]</a><a href="#none">[2]</a><a href="#none">[3]</a></div><!--number-->
+      </div><!--product_inner-->
+    </div><!--product-->
+  
+
+    <div id="footer">
+        <div class="footer_inner clearfix">
+            <ul class="guide clearfix">
+                <li><a href="#none">공지사항</a></li>
+                <li><a href="#none">교환/반품 안내</a></li>
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none">FAQ</a></li>
+            </ul>
+            
+            <ul class="info">
+                <li>사업자등록번호 : 123-45-12345 | 통신판매업신고번호 : 부산 - 12345</li>
+                <li class="padding">대표 : 김 도안 | 주소: 부산광역시 동래구 사직로45</li>
+                <li>copyright. 2022. lifeinthe.com. All rights reserved.</li>
+            </ul>
+
+            <ul class="icon clearfix">
+                <li><a href="#none"><img src="./images/instagram.png" alt="인스타그램"></a></li>
+                <li><a href="#none"><img src="./images/youtube.png" alt="유투브"></a></li>
+                <li><a href="#none"><img src="./images/smart_store.png" alt="스마트스토어"></a></li>
+            </ul>
+
+            <div class="center">
+                <p class="size">고객센터</p>
+                <p><span>1234-5678</span></p>
+                <p class="padding">토요일, 공휴일 휴무</p>
+                <p>(09:00~18:00)</p>
+            </div>
+        </div><!--footer_inner-->
+    </div><!--footer-->
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper main_banner-->
+    <script>
+      var swiper = new Swiper(".main_banner", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
+
+    <!-- Initialize Swiper review-->
+    <script>
+      var swiper = new Swiper(".review", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
